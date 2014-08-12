@@ -1,4 +1,14 @@
-GitHub-markdown-highlight-bug
-=============================
+The CSS code block below technically has a syntax error (a missing `}`).
 
-GitHub Markdown highlight bug demo
+```css
+body {
+  ...
+  ... add a closing brace here to see the highlight difference in line 12
+```
+
+However, syntax errors should not spill into subsequent blocks. The block below should be highlighted properly as JavaScript.
+
+```js
+if ('string') {  // 'string' should be red
+  ...
+```
